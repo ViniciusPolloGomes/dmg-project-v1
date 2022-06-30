@@ -8,7 +8,7 @@ export function FeaturedApartaments(){
                     mt={5}
             >
                 <Heading as='h6' size='xs' color="green.300">Novidades</Heading>
-                <Heading as='h1' size='4xl' color="black">
+                <Heading as='h1' size={['2xl','4xl']} color="black">
                     Apartamentos em destaques
                 </Heading>
                 <CardProduct/>

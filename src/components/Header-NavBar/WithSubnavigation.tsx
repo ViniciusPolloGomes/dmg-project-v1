@@ -82,7 +82,7 @@ import {
               Sign In
             </Button>
             <Button
-              display={{ base: '1', md: 'inline-flex' }}
+              display={{ base: '4', md: 'inline-flex' }}
               fontSize={'sm'}
               fontWeight={600}
               color={'white'}

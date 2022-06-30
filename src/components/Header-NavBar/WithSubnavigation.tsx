@@ -1,3 +1,4 @@
+
 import {
     Box,
     Flex,
@@ -26,18 +27,23 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
   } from '@chakra-ui/icons';
+
+  import Image from 'next/image'
+  import Logo from '../../public/dmg.png'  
   
+
+
   export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
   
     return (
-      <Box>
+      <Box px={['10%','10%','10%']}>
         <Flex
           bg={useColorModeValue('white', 'gray.800')}
           color={useColorModeValue('gray.600', 'white')}
           minH={'60px'}
           py={{ base: 2 }}
-          px={{ base: 4 }}
+          px={{ base: 0 }}
           borderBottom={1}
           borderStyle={'solid'}
           borderColor={useColorModeValue('gray.200', 'gray.900')}
@@ -56,13 +62,7 @@ import {
             />
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-            <Text
-              textAlign={'center' }
-              fontFamily={'heading'}
-              color={useColorModeValue('gray.800', 'white')}>
-              Logo
-            </Text>
-  
+            <Image  src={Logo} alt="logo" />
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
               <DesktopNav />
             </Flex>
@@ -86,10 +86,10 @@ import {
               fontSize={'sm'}
               fontWeight={600}
               color={'white'}
-              bg={'pink.400'}
+              colorScheme="blue"
               w={['24 ','24','24']}
               _hover={{
-                bg: 'pink.300',
+                bg: 'blue.300',
               }}>
               Sign Up
             </Button>

@@ -40,3 +40,14 @@ yarn add @svgr/webpack
 yarn add @chakra-ui/react @emotion/react @emotion/styled framer-motion
 
 yarn add @chakra-ui/icons
+
+.eslintrc.json
+```bash
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "@next/next/no-document-import-in-page": "off"
+}
+}
+```
+

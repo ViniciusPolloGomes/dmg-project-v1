@@ -21,7 +21,7 @@ export function Footer(){
             width={['100%']}
             >
             <Stack spacing={{ base: '6', md: '8'}} align="start">
-                <Image src={Logo} width={150}/>
+                <Image alt="Logo Dmg" src={Logo} width={150}/>
                 <Text color="muted">Create beautiful websites remarkably fast.</Text>
             </Stack>
             <Stack

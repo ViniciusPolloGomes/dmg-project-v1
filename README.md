@@ -33,6 +33,10 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+yarn create next-app --typescript
+
+yarn add @svgr/webpack
+
 yarn add @chakra-ui/react @emotion/react @emotion/styled framer-motion
 
 yarn add @chakra-ui/icons

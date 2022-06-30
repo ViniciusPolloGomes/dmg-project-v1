@@ -1,4 +1,4 @@
-<img src="https://i.ibb.co/w6GmsVL/Templateimobiliario.jpg" alt="Templateimobiliario" border="0">
+<img src="https://i.ibb.co/4wqh1pV/Templateimobiliario.jpg" alt="Templateimobiliario" border="0">
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

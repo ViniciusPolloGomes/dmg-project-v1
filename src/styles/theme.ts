@@ -51,6 +51,8 @@ export  const theme = extendTheme ({
               body:{
                   bg:'gray.900',
                   color:'gray.25',
+                  width: '100vw',
+                  margin:'0',
               }
           }
       }    

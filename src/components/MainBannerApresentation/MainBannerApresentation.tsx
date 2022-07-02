@@ -10,12 +10,11 @@ import {
     InputLeftElement,
   } from '@chakra-ui/react';
   import {SearchIcon} from '@chakra-ui/icons'
-import { ReactNode } from 'react';
 
   export function MainBannerApresentation() {
     return (
       <Flex
-        w={'full'}
+        w={'100vw'}
         h={'40vh'}
         backgroundImage={
           'url(https://www.estilofontana.com.br/blog/wp-content/uploads/2019/04/apartamento-maior-2-1.png)'
@@ -23,11 +22,11 @@ import { ReactNode } from 'react';
         backgroundSize={'cover'}
         backgroundPosition={'center center'}>
         <VStack
-          w={'full'}
+          w={'100vw'}
           justify={'center'}
           px={useBreakpointValue({ base: 4, md: 8 })}
           bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
-          <Stack maxW={'2xl'} align={'center'} spacing={6}>
+          <Stack maxW={['xl','2xl']} align={'center'} spacing={6}>
             <Text
               color={'white'}
               fontWeight={700}
@@ -57,7 +56,7 @@ import { ReactNode } from 'react';
                         bgColor='white'
                         borderRadius='50'
                         _placeholder={{ opacity: 10, color: 'gray.400' }}
-                        w={['300px','600px']}
+                        w={['300px','300px','600px']}
                         paddingLeft={['3rem']}
 
                     />

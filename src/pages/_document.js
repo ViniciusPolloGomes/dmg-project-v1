@@ -4,8 +4,7 @@ import { extendTheme } from '@chakra-ui/react';
 export default function Document() {
   return (
     <Html>
-      <Head>
-        </Head>
+      <Head/>
       <body>
         <Main />
         <NextScript />

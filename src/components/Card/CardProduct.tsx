@@ -57,7 +57,7 @@ function Rating({ rating, numReviews }: RatingProps) {
   export function CardProduct() {
     return (
       <Flex direction="column" alignItems="center">
-        <Flex p={50} w="full" alignItems="center" justifyContent="center">
+        <Flex p={['0','20','50']} w="full" alignItems="center" justifyContent="center">
           <Box
             bg={useColorModeValue('white', 'gray.800')}
             maxW="sm"

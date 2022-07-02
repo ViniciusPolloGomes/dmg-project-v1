@@ -7,7 +7,6 @@ export function MainComponent(){
         <main>  
             <MainBannerApresentation/>
             <FeaturedApartaments/>
-                
         </main>
     )
 }

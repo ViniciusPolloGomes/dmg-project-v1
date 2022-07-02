@@ -6,6 +6,7 @@ import WithSubnavigation from '../components/Header-NavBar/WithSubnavigation'
 import {MainComponent} from '../components/Main/MainComponent'
 import {Footer} from '../components/Footer/Footer'
 import { NavBar } from './../components/Header-NavBar/NavBar';
+import { Flex } from '@chakra-ui/react';
 
 const Home: NextPage = () => {
 

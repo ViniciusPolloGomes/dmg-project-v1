@@ -33,7 +33,7 @@ import {
               fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}
               align='center'
             >
-               Realize seus sonhos, encontre as melhores opções de apartamentos.
+               Realize seus sonhos, encontre as melhores opções de empreendimentos.
             </Text>
             <Stack
                   alignItems="center"

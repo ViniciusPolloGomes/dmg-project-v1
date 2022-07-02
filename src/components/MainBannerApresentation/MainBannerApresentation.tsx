@@ -47,8 +47,9 @@ import { ReactNode } from 'react';
                     fontSize='1.2em'
                     px='8'
                     pt='3'
-                    children={[<SearchIcon/>]}
-                  />
+                  >
+                    <SearchIcon/>
+                  </InputLeftElement>
                     <Input
                         placeholder='Busque pelo local desejado...'
                         size={['lg']}

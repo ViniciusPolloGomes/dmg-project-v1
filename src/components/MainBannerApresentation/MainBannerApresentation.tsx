@@ -45,7 +45,7 @@ import {
                     fontSize='1.2em'
                     px='8'
                     pt='3'
-                    children={<Icon as={SearchIcon} />}
+                    children={<SearchIcon/>}
                   />
                     <Input
                         placeholder='Busque pelo local desejado...'

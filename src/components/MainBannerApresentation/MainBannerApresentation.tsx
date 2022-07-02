@@ -10,6 +10,8 @@ import {
     InputLeftElement,
   } from '@chakra-ui/react';
   import {SearchIcon} from '@chakra-ui/icons'
+import { ReactNode } from 'react';
+
   export function MainBannerApresentation() {
     return (
       <Flex
@@ -45,7 +47,7 @@ import {
                     fontSize='1.2em'
                     px='8'
                     pt='3'
-                    children={<SearchIcon/>}
+                    children={[<SearchIcon/>]}
                   />
                     <Input
                         placeholder='Busque pelo local desejado...'

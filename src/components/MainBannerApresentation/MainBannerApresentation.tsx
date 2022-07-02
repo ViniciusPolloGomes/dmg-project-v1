@@ -24,7 +24,7 @@ import {
         <VStack
           w={'100vw'}
           justify={'center'}
-          px={useBreakpointValue({ base: 4, md: 8 })}
+          px={useBreakpointValue({ base: 0, md: 8 })}
           bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
           <Stack maxW={['xl','2xl']} align={'center'} spacing={6}>
             <Text

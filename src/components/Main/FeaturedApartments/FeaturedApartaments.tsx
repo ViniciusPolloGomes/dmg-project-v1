@@ -6,6 +6,7 @@ export function FeaturedApartaments(){
             <Flex  direction="column"
                     alignItems="center"
                     mt={10}
+                    px={['10%']}
             >
                 <Heading as='h6' size='xs' color="green.300">Novidades</Heading>
                 <Heading as='h1' size={['2xl','4xl']} color="black" textAlign="center">

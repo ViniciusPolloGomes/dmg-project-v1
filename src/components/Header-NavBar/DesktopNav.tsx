@@ -30,44 +30,81 @@ import {
     href?: string;
   }
   
-  const NAV_ITEMS: Array<NavItem> = [
+ const NAV_ITEMS: Array<NavItem> = [
     {
-      label: 'Inspiration',
+      label: 'Início',
       children: [
         {
-          label: 'Explore Design Work',
-          subLabel: 'Trending Design to inspire you',
+          label: 'Sobre',
+          subLabel: 'Conheça melhor nossa empresa.',
           href: '#',
         },
         {
-          label: 'New & Noteworthy',
-          subLabel: 'Up-and-coming Designers',
+          label: 'Serviços',
+          subLabel: 'Entenda nossos principais serviços disponíveis.',
+          href: '#',
+        },
+        {
+          label: 'Depoimentos',
+          subLabel: 'Confira depoimentos de nossos clientes e parceiros.',
+          href: '#',
+        },
+        {
+          label: 'Parceiros',
+          subLabel: 'Todos que contribuem para que nosso negócio se torne realidade.',
           href: '#',
         },
       ],
     },
     {
-      label: 'Find Work',
+      label: 'Imóveis',
       children: [
         {
-          label: 'Job Board',
-          subLabel: 'Find your dream design job',
+          label: 'Imóveis para comprar',
+          subLabel: '',
           href: '#',
         },
         {
-          label: 'Freelance Projects',
-          subLabel: 'An exclusive list for contract work',
+          label: 'Imóveis para alugar',
+          subLabel: '',
           href: '#',
         },
       ],
     },
     {
-      label: 'Learn Design',
-      href: '#',
+    label: 'Serviços',
+      children: [
+        {
+          label: 'Consultoria',
+          subLabel: '',
+          href: '#',
+        },
+        {
+          label: 'Simulação de financiamento',
+          subLabel: '',
+          href: '#',
+        },
+        {
+          label: 'Treinamento',
+          subLabel: '',
+          href: '#',
+        },
+      ],
     },
     {
-      label: 'Hire Designers',
-      href: '#',
+      label: 'Parceiros',
+      subLabel: '',
+      href: '#', 
+    },
+    {
+      label: 'Corretores',
+      subLabel: '',
+      href: '#', 
+    },
+    {
+      label: '#Notícias',
+      subLabel: '',
+      href: '#', 
     },
   ];
 

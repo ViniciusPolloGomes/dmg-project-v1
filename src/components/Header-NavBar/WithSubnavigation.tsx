@@ -52,7 +52,7 @@ import {
           <Flex
             flex={{ base: 1, md: 'auto' }}
             ml={{ base: -2 }}
-            display={{ base: 'flex', md: 'none' }}>
+            display={{ base: 'flex', md: 'flex', lg:'none' }}>
             <IconButton
               onClick={onToggle}
               icon={
@@ -64,7 +64,7 @@ import {
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
             <Image  src={Logo} alt="logo" />
-            <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+            <Flex display={{ base: 'none', md: 'none' ,lg:'flex' }} ml={10}>
               <DesktopNav />
             </Flex>
           </Flex>
@@ -79,12 +79,13 @@ import {
               fontSize={'sm'}
               fontWeight={400}
               variant={'link'}
+              paddingLeft={['0rem','2rem','1rem']}
               
               >
-              Sign In
+              Entrar
             </Button>
             <Button
-              display={{ base: 'none', md: 'inline-flex' }}
+              display={{ base: 'none', md: 'inline-flex',lg: 'inline-flex' }}
               fontSize={'sm'}
               fontWeight={600}
               color={'white'}
@@ -93,7 +94,7 @@ import {
               _hover={{
                 bg: 'blue.300',
               }}>
-              Sign Up
+              Inscrever-se
             </Button>
           </Stack>
         </Flex>

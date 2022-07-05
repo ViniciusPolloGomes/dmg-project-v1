@@ -29,45 +29,82 @@ interface NavItem {
     href?: string;
 }
   
-const NAV_ITEMS: Array<NavItem> = [
-    {
-      label: 'Inspiration',
-      children: [
-        {
-          label: 'Explore Design Work',
-          subLabel: 'Trending Design to inspire you',
-          href: '#',
-        },
-        {
-          label: 'New & Noteworthy',
-          subLabel: 'Up-and-coming Designers',
-          href: '#',
-        },
-      ],
-    },
-    {
-      label: 'Find Work',
-      children: [
-        {
-          label: 'Job Board',
-          subLabel: 'Find your dream design job',
-          href: '#',
-        },
-        {
-          label: 'Freelance Projects',
-          subLabel: 'An exclusive list for contract work',
-          href: '#',
-        },
-      ],
-    },
-    {
-      label: 'Learn Design',
-      href: '#',
-    },
-    {
-      label: 'Hire Designers',
-      href: '#',
-    },
+export const NAV_ITEMS: Array<NavItem> = [
+  {
+    label: 'Início',
+    children: [
+      {
+        label: 'Sobre',
+        subLabel: 'Conheça melhor nossa empresa.',
+        href: '#',
+      },
+      {
+        label: 'Serviços',
+        subLabel: 'Entenda nossos principais serviços disponíveis.',
+        href: '#',
+      },
+      {
+        label: 'Depoimentos',
+        subLabel: 'Confira depoimentos de nossos clientes e parceiros.',
+        href: '#',
+      },
+      {
+        label: 'Parceiros',
+        subLabel: 'Todos que contribuem para que nosso negócio se torne realidade.',
+        href: '#',
+      },
+    ],
+  },
+  {
+    label: 'Imóveis',
+    children: [
+      {
+        label: 'Imóveis para comprar',
+        subLabel: '',
+        href: '#',
+      },
+      {
+        label: 'Imóveis para alugar',
+        subLabel: '',
+        href: '#',
+      },
+    ],
+  },
+  {
+  label: 'Serviços',
+    children: [
+      {
+        label: 'Consultoria',
+        subLabel: '',
+        href: '#',
+      },
+      {
+        label: 'Simulação de financiamento',
+        subLabel: '',
+        href: '#',
+      },
+      {
+        label: 'Treinamento',
+        subLabel: '',
+        href: '#',
+      },
+    ],
+  },
+  {
+    label: 'Parceiros',
+    subLabel: '',
+    href: '#', 
+  },
+  {
+    label: 'Corretores',
+    subLabel: '',
+    href: '#', 
+  },
+  {
+    label: '#Notícias',
+    subLabel: '',
+    href: '#', 
+  },
 ];
 
 
@@ -79,7 +116,8 @@ export const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
         display={'block'}
         p={2}
         rounded={'md'}
-        _hover={{ bg: useColorModeValue('blue.50', 'gray.900') }}>
+        _hover={{ bg: useColorModeValue('blue.50', 'gray.900') }}
+      >
         <Stack direction={'row'} align={'center'}>
           <Box>
             <Text

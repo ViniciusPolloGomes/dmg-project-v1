@@ -53,3 +53,5 @@ yarn add @chakra-ui/icons
 }
 ```
 
+yarn add i firebase
+

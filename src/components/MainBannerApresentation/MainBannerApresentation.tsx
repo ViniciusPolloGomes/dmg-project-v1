@@ -15,7 +15,7 @@ import {
     return (
       <Flex
         w={'100vw'}
-        h={'40vh'}
+        h={['40vh','65vh']}
         backgroundImage={
           'url(https://www.estilofontana.com.br/blog/wp-content/uploads/2019/04/apartamento-maior-2-1.png)'
         }
@@ -26,7 +26,7 @@ import {
           justify={'center'}
           px={useBreakpointValue({ base: 0, md: 8 })}
           bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
-          <Stack maxW={['xl','2xl']} align={'center'} spacing={6}>
+          <Stack maxW={['xl','2xl']} align={'center'} spacing={6} mt={10}>
             <Text
               color={'white'}
               fontWeight={700}

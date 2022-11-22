@@ -30,14 +30,20 @@ import {
 
   import Image from 'next/image'
   import Logo from '../../public/dmg.png'  
+import { useRouter } from 'next/router';
   
 
 
   export default function WithSubnavigation() {
+    
     const { isOpen, onToggle } = useDisclosure();
-  
+    
+    const router = useRouter()
+    
+
     return (
-      <Box px={['10%','10%','10%']}>
+      <Box px={['10%','10%','10%']} 
+        pos="fixed" w="100%" left="0" top="0" zIndex="1" bg={useColorModeValue('white','gray.800')}>
         <Flex
           bg={useColorModeValue('white', 'gray.800')}
           color={useColorModeValue('gray.600', 'white')}
@@ -47,12 +53,13 @@ import {
           borderBottom={1}
           borderStyle={'solid'}
           borderColor={useColorModeValue('gray.200', 'gray.900')}
-          align={'center'}
+          align={'center'} 
         >
           <Flex
             flex={{ base: 1, md: 'auto' }}
             ml={{ base: -2 }}
-            display={{ base: 'flex', md: 'flex', lg:'none' }}>
+            display={{ base: 'flex', md: 'flex', lg:'none' }}
+            >
             <IconButton
               onClick={onToggle}
               icon={
@@ -62,7 +69,9 @@ import {
               aria-label={'Toggle Navigation'}
             />
           </Flex>
-          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+          <Flex flex={{ base: 1 }} 
+                justify={{ base: 'center', md: 'start' }}
+                >
             <Image  src={Logo} alt="logo" />
             <Flex display={{ base: 'none', md: 'none' ,lg:'flex' }} ml={10}>
               <DesktopNav />
@@ -80,7 +89,7 @@ import {
               fontWeight={400}
               variant={'link'}
               paddingLeft={['0rem','2rem','1rem']}
-              
+              onClick={()=>router.push('/Login')}
               >
               Entrar
             </Button>

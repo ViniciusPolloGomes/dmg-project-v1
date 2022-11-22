@@ -11,11 +11,11 @@ import { Flex } from '@chakra-ui/react';
 const Home: NextPage = () => {
 
   return (
-    <>
+    <div id="Home">
       <NavBar/>
       <MainComponent/>
       <Footer/>
-    </>
+    </div>
   )
 }
 

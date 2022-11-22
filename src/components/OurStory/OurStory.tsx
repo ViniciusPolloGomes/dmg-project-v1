@@ -43,7 +43,7 @@ import {
   export function OurStory() {
     
     return (
-      <Container maxW={['full']} px={['10%']} py={12}>
+      <Container maxW={['full']} px={['10%']} py={150} id="ourstory">
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
           <Stack spacing={4}>
             <Text
